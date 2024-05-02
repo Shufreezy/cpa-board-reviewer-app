@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyd
+*.pyo
+
+# Python cache files
+__pycache__/
+
+# Flask session files
+session/
+
+# Flask static files
+static/
+
+# Flask templates
+templates/
+
+# Environment variables
+.env
+
+# IDE files
+*.sublime-workspace
+*.sublime-project
+*.vscode
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Databases
+*.sqlite3
+*.db
+db/
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+key.json
