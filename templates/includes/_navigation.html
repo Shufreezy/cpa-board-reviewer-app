@@ -1,0 +1,7 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="navbar-nav mr-auto p-2">
+        {% for menu_item in ["home", "reviewer"] %}
+            {{ macros.nav_link(menu_item) }}
+        {% endfor %}
+    </div>
+</nav>

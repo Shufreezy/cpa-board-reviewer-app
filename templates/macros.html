@@ -1,0 +1,5 @@
+{% from 'bootstrap5/nav.html' import render_nav_item %}
+
+{% macro nav_link(menu_item) %}
+    {{ render_nav_item(menu_item, menu_item | capitalize) }}</a>
+{% endmacro %}

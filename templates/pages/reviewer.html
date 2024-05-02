@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5 bg-primary">
+    <form>
+        {% for question in questions %}
+        <div class="card mb-3">
+          <h5 class="card-header">{{ question.question }}</h5>
+          <div class="card-body">
+            <ul class="list-group">
+              {% for answer in question.answers %}
+              <li class="list-group-item">
+                <label>
+                  <input type="radio" name="question-{{ question.id }}" value="{{ answer }}">
+                  {{ answer }}
+                </label>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+{% endblock content %}

@@ -1,0 +1,26 @@
+{% import "macros.html" as macros %}
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        {% block styles %}
+            {% include "includes/_styles.html" %}
+        {% endblock styles%}
+        <title>{% block title %}{{ title }} {% endblock %}</title>
+    </head>
+
+    <body style="background-size: cover; background-image: url({{url_for('static', filename='index-background.png')}})">
+        <header>
+            {% include "includes/_navigation.html" %}
+        </header>
+        {% block content %}
+            {% include "includes/_index.html" %}
+        {% endblock content %}
+        <footer>
+            {% block scripts %}
+                {% include "includes/_scripts.html" %}
+            {% endblock scripts %}
+        </footer>
+    </body>
+</html>
