@@ -42,3 +42,4 @@ env/
 .venv/
 
 key.json
+gemini.json
