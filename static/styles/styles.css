@@ -2,7 +2,13 @@
     height: 18.60vh !important;
 }
 
-.active {
+.nav-item.active {
     background-color: #0a47a1;
     border-radius: 23px;
+}
+
+.carousel {
+    width:100%;
+    height:50vh;
+    background-color:rgb(245, 245, 220, 0.9)
 }
